@@ -1,117 +1,145 @@
 <!DOCTYPE html>
-<html class="" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="">
+  <body class="page-body">
 
-    <header class="">
-      <img class="" src="https://via.placeholder.com/150x150" width="" height="" alt="">
-      <nav class="">
-        <button class="" type="button">
-          <span class="">Меню</span>
+    <header class="page-header">
+      <img class="page-header__logo logo" src="https://via.placeholder.com/150x150" width="" height="" alt="">
+      <nav class="page-header__navigation navigation">
+        <button class="navigation__menu-button" type="button">
+          <span class="visually-hidden">Меню</span>
         </button>
 
-        <ul class="">
-          <li class="">
-            <a class="" href="index.html">Главная</a>
+        <ul class="navigation__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="">
-            <a class="" href="photo.html">Фотографии</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="">
-            <a class="">Конкурс</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Конкурс</a>
           </li>
-          <li class="">
-            <a class="" href="https://htmlacademy.ru">html academy</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">html academy</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="">
-      <h1 class="">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="">
+    <main class="page-mane">
+      <h1 class="page-mane__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="page-mane__description">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       </p>
 
-      <form class="" name="" method="get" action="https://echo.htmlacademy.ru">
+      <form class="page-mane__competition competition" name="competition" method="get" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="">
-          <label class="" for="">Фамилия:</label>
-          <input class="" type="text" name="" placeholder="Укажите фамилию *" id="">
-          <label class="" for="">Имя:</label>
-          <input class="" type="text" name="" placeholder="Введите ваше имя *" id="">
-          <label class="" for="">Отчество:</label>
-          <input class="" type="text" name="" placeholder="Ну и отчество тоже" id="">
+        <fieldset class="competition__full-name">
+          <label class="competition__name-label">
+            Фамилия:
+            <input class="competition__field" type="text" name="lastname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="competition__name-label">
+            Имя:
+            <input class="competition__field" type="text" name="firstname" placeholder="Введите ваше имя *">
+          </label>
+          <label class="competition__name-label">
+            Отчество:
+            <input class="competition__field" type="text" name="fathername" placeholder="Ну и отчество тоже">
+          </label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Ваши безбашенные достижения в путешествии</legend>
-
-          <input class="" type="checkbox" name="" value="" id="">
-          <label class="" for="">Сделал селфи с акулой</label>
-          <input class="" type="checkbox" name="" value="" id="">
-          <label class="" for="">Обгорел на пляже</label>
-          <input class="" type="checkbox" name="" value="" id="">
-          <label class="" for="">Видел Чака Норриса</label>
-          <input class="" type="checkbox" name="" value="" id="">
-          <label class="" for="">Накупил сувениров</label>
-          <input class="" type="checkbox" name="" value="" id="">
-          <label class="" for="">Удержал башню</label>
-          <input class="" type="checkbox" name="" value="" id="">
-          <label class="" for="">Разгромил отель</label>
+        <fieldset class="competition__achievement">
+          <legend class="competition__legend">Ваши безбашенные достижения в путешествии</legend>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="shark" value="">
+            Сделал селфи с акулой
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="beach" value="">
+            Обгорел на пляже
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="chuck" value="">
+            Видел Чака Норриса
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="souvenirs" value="">
+            Накупил сувениров
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="tower" value="">
+            Удержал башню
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="hotel" value="">
+            Разгромил отель
+          </label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Контактная информация</legend>
-          <label class="" for="">Номер телефона</label>
-          <input class="" type="text" name="" placeholder="Номер, пожалуйста" id="">
-          <label class="" for="">Адрес почты</label>
-          <input class="" type="text" name="" placeholder="Введите почту *" id="">
+        <fieldset class="competition__contact">
+          <legend class="competition__legend">Контактная информация</legend>
+          <label class="competition__contact-label">Номер телефона
+            <input class="competition__contact-field" type="text" name="phone" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="competition__contact-label">Адрес почты
+            <input class="competition__contact-field" type="text" name="email" placeholder="Введите почту *">
+          </label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">С каким приложением путешествовали?</legend>
-          <input class="" type="radio" name="" value="" id="">
-          <label class="" for="">Pink для iOS</label>
-          <input class="" type="radio" name="" value="" id="">
-          <label class="" for="">Pink на Android</label>
-          <input class="" type="radio" name="" value="" id="">
-          <label class="" for="">Windows Phone</label>
+        <fieldset class="competition__travel">
+          <legend class="competition__legend">С каким приложением путешествовали?</legend>
+          <label class="competition__travel-label">
+            <input class="competition__travel-radio" type="radio" name="ios" value="">
+            Pink для iOS
+          </label>
+          <label class="competition__travel-label">
+            <input class="competition__travel-radio" type="radio" name="android" value="">
+            Pink на Android
+          </label>
+          <label class="competition__travel-label">
+            <input class="competition__travel-radio" type="radio" name="win" value="">
+            Windows Phone
+          </label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Опишите свои эмоции</legend>
-          <textarea class="" name="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <fieldset class="competition__emotions">
+          <legend class="competition__legend">Опишите свои эмоции</legend>
+          <label class="competition__emotions-label">
+            <span class="visually-hidden">Ваш отзыв:</span>
+            <textarea class="competition__emotions-field" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
         </fieldset>
 
-        <button class="" type="submit" name="">Отправить форму</button>
+        <button class="competition__submit submit-button" type="submit">Отправить форму</button>
 
       </form>
 
     </main>
 
-    <footer class="">
-      <img class="" src="https://via.placeholder.com/150x150" width="" height="" alt="">
-      <ul class="">
-        <li class="">
-          <a class="" href=""><span class="visually-hidden">Twitter</span></a>
+    <footer class="page-footer">
+      <img class="page-footer__logo logo" src="https://via.placeholder.com/150x150" width="" height="" alt="">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><span class="visually-hidden">Twitter</span></a>
         </li>
-        <li class="">
-          <a class="" href=""><span class="visually-hidden">Facebook</span></a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><span class="visually-hidden">Facebook</span></a>
         </li>
-        <li class="">
-          <a class="" href=""><span class="visually-hidden">Youtube</span></a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#"><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
 
-      <div class="">
-        <p class="">
+      <div class="page-footer__designer designer">
+        <p class="designer__text">
           Разработано
         </p>
-        <img class="" src="https://via.placeholder.com/150x150" width="" height="" alt="">
+        <img class="designer__logo" src="https://via.placeholder.com/150x150" width="" height="" alt="">
       </div>
     </footer>
 

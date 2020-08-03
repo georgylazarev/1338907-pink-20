@@ -83,15 +83,26 @@
 
       </section>
 
-      <section class="page-main__section reviews">
+      <section class="page-main__reviews reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <p class="reviews__review slide">
-          <cite class="slide__cite">Николай Петров</cite> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </p>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <cite class="reviews__cite">Николай Петров</cite>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
         <div class="reviews__slider-navigation">
-          <div class="reviews__point reviews__point--current"></div>
-          <div class="reviews__point"></div>
-          <div class="reviews__point"></div>
+          <button class="reviews__point reviews__point--current" type="button">
+            <span class="visually-hidden">1</span>
+          </button>
+          <button class="reviews__point" type="button">
+            <span class="visually-hidden">2</span>
+          </button>
+          <button class="reviews__point" type="button">
+            <span class="visually-hidden">3</span>
+          </button>
         </div>
       </section>
 

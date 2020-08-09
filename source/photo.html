@@ -35,7 +35,8 @@
       <p class="page-main__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
       <section class="page-main__panorama panorama">
-        <h2 class="panorama__header">Панорама дня</h2>
+        <h2 class="visually-hidden">Панорама дня</h2>
+
         <article class="panorama__article">
           <img class="panorama__photo-of-the-day" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
           <div class="panorama__description">
@@ -52,123 +53,128 @@
 
           </div>
         </article>
+
       </section>
 
       <section class="page-main__gallery gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
 
         <article class="gallery__item">
-          <figure class="gallery__figure">
             <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
-            <span class="gallery__author">Левон</span>
-            <time class="gallery__time-ago">(5 часов назад)</time>
-            <figcaption class="gallery__photo-description">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </figcaption>
+            <div class="gallery__photo-description">
+              <span class="gallery__author">Левон</span>
+              <time class="gallery__time-ago">(5 часов назад)</time>
+              <figcaption class="gallery__photo-description">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </figcaption>
 
-            <div class="gallery__likes-block">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне понравилось!</span>
-              </button>
-              <span class="gallery__likes-count" href="#">Нравится: 356</span>
+              <div class="gallery__likes-block">
+                <button class="gallery__like-button" type="button">
+                  <span class="visually-hidden">Мне понравилось!</span>
+                </button>
+                <span class="gallery__likes-count" href="#">Нравится: 356</span>
+              </div>
             </div>
-
-          </figure>
         </article>
 
         <article class="gallery__item">
-          <figure class="gallery__figure">
-            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
-            <span class="gallery__author">Антон</span>
-            <time class="gallery__time-ago">(12 часов назад)</time>
-            <figcaption class="gallery__photo-description">
-              Соседи будут рады!
-            </figcaption>
 
-            <div class="gallery__likes-block">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне понравилось!</span>
-              </button>
-              <span class="gallery__likes-count" href="#">Нравится: 666</span>
+            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
+            <div class="gallery__photo-description">
+              <span class="gallery__author">Антон</span>
+              <time class="gallery__time-ago">(12 часов назад)</time>
+              <figcaption class="gallery__photo-description">
+                Соседи будут рады!
+              </figcaption>
+
+              <div class="gallery__likes-block">
+                <button class="gallery__like-button" type="button">
+                  <span class="visually-hidden">Мне понравилось!</span>
+                </button>
+                <span class="gallery__likes-count" href="#">Нравится: 666</span>
+              </div>
             </div>
 
-          </figure>
         </article>
 
         <article class="gallery__item">
-          <figure class="gallery__figure">
-            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
-            <span class="gallery__author">Борис</span>
-            <time class="gallery__time-ago">(20 часов назад)</time>
-            <figcaption class="gallery__photo-description">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </figcaption>
 
-            <div class="gallery__likes-block">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне понравилось!</span>
-              </button>
-              <span class="gallery__likes-count" href="#">Нравится: 215</span>
+            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
+            <div class="gallery__photo-description">
+              <span class="gallery__author">Борис</span>
+              <time class="gallery__time-ago">(20 часов назад)</time>
+              <figcaption class="gallery__photo-description">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </figcaption>
+
+              <div class="gallery__likes-block">
+                <button class="gallery__like-button" type="button">
+                  <span class="visually-hidden">Мне понравилось!</span>
+                </button>
+                <span class="gallery__likes-count" href="#">Нравится: 215</span>
+              </div>
             </div>
 
-          </figure>
         </article>
 
         <article class="gallery__item">
-          <figure class="gallery__figure">
-            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
-            <span class="gallery__author">Сергей</span>
-            <time class="gallery__time-ago">(25 часов назад)</time>
-            <figcaption class="gallery__photo-description">
-              Самая кубанская в мире!
-            </figcaption>
 
-            <div class="gallery__likes-block">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне понравилось!</span>
-              </button>
-              <span class="gallery__likes-count" href="#">Нравится: 4</span>
+            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
+            <div class="gallery__photo-description">
+              <span class="gallery__author">Сергей</span>
+              <time class="gallery__time-ago">(25 часов назад)</time>
+              <figcaption class="gallery__photo-description">
+                Самая кубанская в мире!
+              </figcaption>
+
+              <div class="gallery__likes-block">
+                <button class="gallery__like-button" type="button">
+                  <span class="visually-hidden">Мне понравилось!</span>
+                </button>
+                <span class="gallery__likes-count" href="#">Нравится: 4</span>
+              </div>
             </div>
 
-          </figure>
         </article>
 
         <article class="gallery__item">
-          <figure class="gallery__figure">
-            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
-            <span class="gallery__author">Максим</span>
-            <time class="gallery__time-ago">(40 часов назад)</time>
-            <figcaption class="gallery__photo-description">
-              Где снег-то?
-            </figcaption>
 
-            <div class="gallery__likes-block">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне понравилось!</span>
-              </button>
-              <span class="gallery__likes-count" href="#">Нравится: 150</span>
+            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
+            <div class="gallery__photo-description">
+              <span class="gallery__author">Максим</span>
+              <time class="gallery__time-ago">(40 часов назад)</time>
+              <figcaption class="gallery__photo-description">
+                Где снег-то?
+              </figcaption>
+
+              <div class="gallery__likes-block">
+                <button class="gallery__like-button" type="button">
+                  <span class="visually-hidden">Мне понравилось!</span>
+                </button>
+                <span class="gallery__likes-count" href="#">Нравится: 150</span>
+              </div>
             </div>
 
-          </figure>
         </article>
 
         <article class="gallery__item">
-          <figure class="gallery__figure">
-            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
-            <span class="gallery__author">Надежда</span>
-            <time class="gallery__time-ago">(45 часов назад)</time>
-            <figcaption class="gallery__photo-description">
-              Всем GM и взаимные лайки!
-            </figcaption>
 
-            <div class="gallery__likes-block">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне понравилось!</span>
-              </button>
-              <span class="gallery__likes-count" href="#">Нравится: 2560</span>
+            <img class="gallery__photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
+            <div class="gallery__photo-description">
+              <span class="gallery__author">Надежда</span>
+              <time class="gallery__time-ago">(45 часов назад)</time>
+              <figcaption class="gallery__photo-description">
+                Всем GM и взаимные лайки!
+              </figcaption>
+
+              <div class="gallery__likes-block">
+                <button class="gallery__like-button" type="button">
+                  <span class="visually-hidden">Мне понравилось!</span>
+                </button>
+                <span class="gallery__likes-count" href="#">Нравится: 2560</span>
+              </div>
             </div>
 
-          </figure>
         </article>
 
       </section>

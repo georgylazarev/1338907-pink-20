@@ -184,20 +184,44 @@
         <p class="upload__description">Затмите их всех!</p>
         <p class="upload__description">Выкладывайте все, что накопилось в телефоне!</p>
         <div class="upload__preview">
-
+          <img class="upload__preview-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
+          <label class="visually-hidden">Выберите фото для загрузки
+            <input type="file" name="photo">
+          </label>
         </div>
 
-        <form class="upload__form" name="" method="post" action="https://echo.htmlacademy.ru">
+        <form class="upload__form" name="upload" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="upload__fieldset">
-            <label class="upload__label">
-              <input class="upload__field" type="range" name="crop" value="">
-            </label>
-            <label class="upload__label">
-              <input class="upload__field" type="range" name="color" value="">
-            </label>
-            <label class="upload__label">
-              <input class="upload__field" type="range" name="brightness" value="">
-            </label>
+            <div class="upload__filter-block">
+              <button class="upload__checker--crop" type="button">
+                <span class="visually-hidden">Обрезка</span>
+              </button>
+              <label class="upload__label">
+                <span class="visually-hidden">Обрезка</span>
+                <input class="upload__field" type="range" name="crop">
+              </label>
+            </div>
+
+            <div class="upload__filter-block">
+              <button class="vfill" type="button">
+                <span class="visually-hidden">Заливка</span>
+              </button>
+              <label class="upload__label">
+                <span class="visually-hidden">Заливка</span>
+                <input class="upload__field" type="range" name="fill">
+              </label>
+            </div>
+
+            <div  class="upload__filter-block">
+              <button class="upload__checker--contrast" type="button">
+                <span class="visually-hidden">Контраст</span>
+              </button>
+              <label class="upload__label">
+                <span class="visually-hidden">Контраст</span>
+                <input class="upload__field" type="range" name="contrast">
+              </label>
+            </div>
+
             <button class="upload__submit" type="submit" name="post">Запостить</button>
             <button class="upload__reset" type="reset" name="reset">Отмена</button>
           </fieldset>

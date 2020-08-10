@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page-body">
+
+    <header class="page-header">
+      <a class="page-header__logo-link" href="index.html"><img class="page-header__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt=""></a>
+      <nav class="page-header__navigation navigation">
+        <button class="navigation__menu-button" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+
+        <ul class="navigation__site-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__header-block">
+        <h1 class="page-main__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <p class="page-main__description">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+
+      <form class="page-main__competition competition" name="competition" method="post" action="https://echo.htmlacademy.ru">
+
+        <fieldset class="competition__full-name">
+          <label class="competition__name-label">
+            Фамилия:
+            <input class="competition__field" type="text" name="lastname" placeholder="Укажите фамилию *" required>
+          </label>
+          <label class="competition__name-label">
+            Имя:
+            <input class="competition__field" type="text" name="firstname" placeholder="Введите ваше имя *" required>
+          </label>
+          <label class="competition__name-label">
+            Отчество:
+            <input class="competition__field" type="text" name="fathername" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+
+        <fieldset class="competition__achievement">
+          <legend class="competition__legend">Ваши безбашенные достижения в путешествии</legend>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="shark">
+            Сделал селфи с акулой
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="beach">
+            Обгорел на пляже
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="chuck">
+            Видел Чака Норриса
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="souvenirs">
+            Накупил сувениров
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="tower">
+            Удержал башню
+          </label>
+          <label class="competition__check-label">
+            <input class="competition__check" type="checkbox" name="hotel">
+            Разгромил отель
+          </label>
+        </fieldset>
+
+        <fieldset class="competition__contact">
+          <legend class="competition__legend">Контактная информация</legend>
+          <label class="competition__contact-label">Номер телефона
+            <input class="competition__contact-field" type="tel" name="phone" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="competition__contact-label">Адрес почты
+            <input class="competition__contact-field" type="email" name="email" placeholder="Введите почту *" required>
+          </label>
+        </fieldset>
+
+        <fieldset class="competition__travel">
+          <legend class="competition__legend">С каким приложением путешествовали?</legend>
+          <label class="competition__travel-label">
+            <input class="competition__travel-radio" type="radio" name="application" value="ios">
+            Pink для iOS
+          </label>
+          <label class="competition__travel-label">
+            <input class="competition__travel-radio" type="radio" name="application" value="android">
+            Pink на Android
+          </label>
+          <label class="competition__travel-label">
+            <input class="competition__travel-radio" type="radio" name="application" value="win">
+            Windows Phone
+          </label>
+        </fieldset>
+
+        <div class="competition__emotions">
+          <label class="competition__emotions-label">
+            Опишите свои эмоции
+            <textarea class="competition__emotions-field" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+        </div>
+
+        <button class="competition__submit submit-button" type="submit">Отправить форму</button>
+        <p class="competition__notice"><sup class="competition__asterisk">*</sup> — обязательные поля</p>
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo-link" href="index.html"><img class="page-footer__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt=""></a>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+        </li>
+      </ul>
+
+      <div class="page-footer__designer designer">
+        <p class="designer__text">
+          Разработано
+        </p>
+        <a class="designer__link" href="https://up.htmlacademy.ru/adaptive/20"><img class="designer__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt=""></a>      </div>
+    </footer>
+
+  </body>
+</html>

@@ -185,16 +185,18 @@
         <h2 class="visually-hidden">Загрузка фото</h2>
         <p class="upload__description">Затмите их всех!</p>
         <p class="upload__description">Выкладывайте все, что накопилось в телефоне!</p>
+
         <form class="upload__form" name="upload" method="post" action="https://echo.htmlacademy.ru">
           <div class="upload__preview">
             <img class="upload__preview-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="">
             <label class="visually-hidden">Выберите фото для загрузки
-              <input type="file" name="photo">
+              <input class="upload__input-file" type="file" name="photo">
             </label>
           </div>
-          <fieldset class="upload__fieldset">
+
+          <fieldset class="upload__filters">
             <div class="upload__filter-block">
-              <button class="upload__checker--crop" type="button">
+              <button class="upload__checker upload__checker--crop" type="button">
                 <span class="visually-hidden">Обрезка</span>
               </button>
               <label class="upload__label">
@@ -204,7 +206,7 @@
             </div>
 
             <div class="upload__filter-block">
-              <button class="vfill" type="button">
+              <button class="upload__checker upload__checker--fill" type="button">
                 <span class="visually-hidden">Заливка</span>
               </button>
               <label class="upload__label">
@@ -214,7 +216,7 @@
             </div>
 
             <div  class="upload__filter-block">
-              <button class="upload__checker--contrast" type="button">
+              <button class="upload__checker upload__checker--contrast" type="button">
                 <span class="visually-hidden">Контраст</span>
               </button>
               <label class="upload__label">

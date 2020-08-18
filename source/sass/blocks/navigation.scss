@@ -1,0 +1,31 @@
+.navigation {
+  outline: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navigation__menu-button {
+  position: absolute;
+  background: none;
+  border: 0;
+  width: 23px;
+  height: 23px;
+  outline: 2px solid red;
+  top: 0;
+}
+
+.navigation__menu-button::before {
+  content: "";
+  background-image: url("../img/icon-menu-cross.svg");
+  background-position: center;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: 0;
+}
+
+.navigation__site-list {
+
+}
